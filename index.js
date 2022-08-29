@@ -21,8 +21,6 @@ app.listen(PORT || 3000, function () {
   console.log('Node.js listening on port ' + PORT);
 });
 
-/*submit a form that has the name attribute set to upfile that includes a file upload. When a file is submited, a response with the file name, type, and size in bytes returns in the JSON response. 
-*/
 let responseObj ={}
 app.post('/api/fileanalyse', upload.single('upfile'), (req, res) => {
   responseObj = {
@@ -30,6 +28,7 @@ app.post('/api/fileanalyse', upload.single('upfile'), (req, res) => {
     "type": req.file.mimetype,
     "size": req.file.size
   }
+//  responseObj["name"] = responseObj["upfile"]
   res.json(responseObj)
   console.log(responseObj)
 })
