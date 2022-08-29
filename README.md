@@ -3,6 +3,8 @@
 ## About
 This is my project of the [File Metadata Microservice challenge](https://www.freecodecamp.org/learn/apis-and-microservices/apis-and-microservices-projects/file-metadata-microservice) for the freeCodeCamp API and Microservice certification. It was built based on the boilerplate available [here](https://github.com/freeCodeCamp/boilerplate-project-filemetadata/).
 
+![image](https://user-images.githubusercontent.com/48526020/187289668-d33080f6-83fe-468c-9398-3b1ac4c41aea.png)
+
 1. You can submit a form that includes a file upload.
 2. The form file input field has the name attribute set to upfile.
 3. When you submit a file, you receive the file name, type, and size in bytes within the JSON response.
